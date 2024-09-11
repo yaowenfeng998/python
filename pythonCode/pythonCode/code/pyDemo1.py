@@ -36,13 +36,11 @@ class Solution1:
         capacity = 0
         while left < right:
             capacity = max(capacity, min(nums[left], nums[right]) * (right - left))
-            if(nums[left] < nums[right]):
+            if (nums[left] < nums[right]):
                 left += 1
             else:
                 right -= 1
         return capacity
-
-
 
 
 s1 = Solution1()
@@ -53,5 +51,5 @@ print('合并区间结果: {}'.format(merged_intervals))
 moveZeroes = s1.moveZeroes([0, 1, 5, 3, 2, 0, 4])
 print('移动0结果: {}'.format(moveZeroes))
 
-maxArea=s1.maxArea([1,8,6,2,5,4,8,3,7])
+maxArea = s1.maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])
 print('盛水最多的容器结果: {}'.format(maxArea))
