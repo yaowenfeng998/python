@@ -1,9 +1,13 @@
-# -*- coding: UTF-8 -*-
-# coding=utf-8
+# grammer=utf-8
+# !/usr/bin/env python3
+# -*- grammer: utf-8 -*-
 from typing import List
 
-
 class Solution1:
+
+    #类对象的init方法 自动调用 初始化
+    def __init__(self, name):
+        self.name = name
 
     # 合并区间 merged[-1] 代表访问列表最后一个元素
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
@@ -43,7 +47,9 @@ class Solution1:
         return capacity
 
 
-s1 = Solution1()
+
+
+s1 = Solution1('a')
 intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
 merged_intervals = s1.merge(intervals)
 print('合并区间结果: {}'.format(merged_intervals))
