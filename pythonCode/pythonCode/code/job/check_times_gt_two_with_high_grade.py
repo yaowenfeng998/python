@@ -14,7 +14,9 @@ def parse_csv(csv_files, columns_to_read=None):
         return None
 
 csv_dir = '/Users/yaowenfeng/Desktop/csvs/*.csv'
+
 csv_files = glob.glob(csv_dir)
+
 columns_to_read = ['部门', 'IP', '端口', '库名', '表名', '字段', '变更前分级', '变更后分级', '操作时间']
 group_key = ['部门', 'IP', '端口', '库名', '表名', '字段']
 

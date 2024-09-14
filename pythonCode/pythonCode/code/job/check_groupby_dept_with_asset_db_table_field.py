@@ -29,6 +29,7 @@ def parse_xlsx(file_path, columns_to_read=None):
 
 csv_dir = '/Users/yaowenfeng/Desktop/csv_dir/*.csv'
 asset_all_file = '/Users/yaowenfeng/Desktop/csv_dir/数据资产全量_列表.xlsx'
+
 csv_files = glob.glob(csv_dir)
 
 csv_columns = ['部门', 'IP', '端口', '库名', '表名', '字段', '变更前分级', '变更后分级', '操作时间']
