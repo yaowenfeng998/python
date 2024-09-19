@@ -1,6 +1,7 @@
 import pandas as pd
 import glob
 
+
 def parse_csv(csv_files, columns_to_read=None):
     try:
         all_data = pd.DataFrame()
@@ -12,6 +13,7 @@ def parse_csv(csv_files, columns_to_read=None):
     except Exception as e:
         print(f"读取文件时发生错误: {e}")
         return None
+
 
 csv_dir = '/Users/yaowenfeng/Desktop/csvs/*.csv'
 
